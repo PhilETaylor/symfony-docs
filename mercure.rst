@@ -287,6 +287,11 @@ Then retrieve it from your JS file:
     const eventSource = new EventSource(url);
     // ...
 
+.. caution::
+
+    If you generate the URL in a dedicated HTML element this way, you will need to 
+    Programmatically Set The Cookie in your controller if you want to use private updates
+
 Mercure also allows subscribing to several topics,
 and to use URI Templates or the special value ``*`` (matched by all topics)
 as patterns:
